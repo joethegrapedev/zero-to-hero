@@ -1,10 +1,29 @@
 # Zero to Genius
 
-Following Andrej Karpathy's [Neural Networks: Zero to Hero](https://karpathy.ai/zero-to-hero.html) series, one lecture per folder.
+A learning project. Working through Andrej Karpathy's
+[Neural Networks: Zero to Hero](https://karpathy.ai/zero-to-hero.html) series, one lecture per
+folder, reimplementing the main ideas from scratch rather than copying them down — including the
+multilayer perceptron language model of Bengio et al. (2003) in
+[`03-makemore-mlp`](03-makemore-mlp).
+
+The notebooks are kept as written: repeated attempts, rebuilds from memory, and questions left in
+the comments. That record is the point.
+
+> Bengio, Y., Ducharme, R., Vincent, P., & Jauvin, C. (2003). A Neural Probabilistic Language
+> Model. *Journal of Machine Learning Research*, 3, 1137–1155.
+> [jmlr.org/papers/v3/bengio03a.html](https://www.jmlr.org/papers/v3/bengio03a.html) ·
+> [PDF](https://www.jmlr.org/papers/volume3/bengio03a/bengio03a.pdf)
 
 ## Lectures
 
 - [`01-micrograd`](01-micrograd) — building a tiny autograd engine from scratch (Lecture 1)
+- [`02-makemore`](02-makemore) — bigram character-level language model, counting and neural net (Lecture 2)
+- [`03-makemore-mlp`](03-makemore-mlp) — multilayer perceptron language model, Bengio et al. 2003 (Lecture 3)
+- [`04-makemore-batchnorm`](04-makemore-batchnorm) — activations, gradients and batch normalisation (Lecture 4)
+
+> `04-makemore-batchnorm` is the one exception to the one-venv-per-lecture rule below: it needs no
+> packages beyond lecture 3's, so it shares the **"Python 3 (makemore-mlp)"** kernel rather than
+> carrying its own ~1 GB copy of PyTorch.
 
 ## Setup (already done for 01-micrograd)
 
